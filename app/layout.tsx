@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Mulish } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/Header";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -12,8 +13,8 @@ const mulish = Mulish({
 });
 
 export const metadata: Metadata = {
-  title: "StarVPN",
-  description: "StarVPN. Ваш.",
+  title: "StarPN",
+  description: "StarPN. Ваш интернет на скорости света.",
 };
 
 export default function RootLayout({
@@ -24,8 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="">
       <body
-        className={`${inter.variable} ${mulish.variable} antialiased`}
+        className={`w-full ${inter.variable} ${mulish.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
