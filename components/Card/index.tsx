@@ -5,7 +5,7 @@ import starIcon from "@/public/star.svg";
 
 export function Card() {
   return (
-    <div className="w-full relative max-w-[500px] h-[250px] bg-[#151515] rounded-2xl p-6 shadow-lg text-white flex flex-col justify-between mx-[20px] sm:mx-[100px]">
+    <div className="w-full relative max-w-[500px] min-w-[300px] h-[250px] bg-[#151515] rounded-2xl p-6 shadow-lg text-white flex flex-col justify-between">
       <div className="flex flex-col gap-y-[8px]">
         <p className="text-3xl font-bold">Мой Баланс</p>
         <p className="text-[#c7c7c7] text-xl font-medium">Баланс</p>
