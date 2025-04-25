@@ -2,7 +2,7 @@ import { Home, Server, Settings } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-export function Footer() {
+export default function Footer() {
   const pathname = usePathname();
 
   const tabs = [
